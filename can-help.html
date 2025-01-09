@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Can You Help Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        form {
+            max-width: 400px;
+            width: 100%;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background: #f9f9f9;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input, textarea, select, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .checkbox-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        button {
+            background: #1a4b84;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #2d7dd2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Can You Help Form</h1>
+    <form action="/submit-help-offer" method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="address">Address</label>
+        <input type="text" id="address" name="address">
+
+        <label for="skills">Skills/Resources Offered</label>
+        <textarea id="skills" name="skills" rows="5" required></textarea>
+
+        <label for="availability">Availability</label>
+        <select id="availability" name="availability" required>
+            <option value="immediate">Immediate</option>
+            <option value="1-week">Within 1 week</option>
+            <option value="flexible">Flexible</option>
+        </select>
+
+        <div class="checkbox-group">
+            <label>What type of assistance can you provide?</label>
+            <label><input type="checkbox" name="assistance[]" value="transport"> Transportation</label>
+            <label><input type="checkbox" name="assistance[]" value="food-delivery"> Food Delivery</label>
+            <label><input type="checkbox" name="assistance[]" value="shelter"> Shelter</label>
+            <label><input type="checkbox" name="assistance[]" value="financial"> Financial Aid</label>
+        </div>
+
+        <label for="comments">Comments/Notes</label>
+        <textarea id="comments" name="comments" rows="3"></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
