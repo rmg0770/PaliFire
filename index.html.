@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>United Relief Campaign - Chabad of Pacific Palisades</title>
+    <style>
+        :root {
+            --primary-blue: #1a4b84;
+            --secondary-blue: #2d7dd2;
+            --accent-red: #d64045;
+            --text-gray: #333333;
+        }
+
+        body {
+            font-family: "Georgia", serif;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: var(--text-gray);
+            text-transform: uppercase;
+            background-image: url('https://www.dropbox.com/scl/fi/kvltzhug2nci0dj36okys/Screenshot_20250108-154019.png?rlkey=dug2dev9vs5vvmhrt4kaf396y&raw=1');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .title {
+            color: var(--primary-blue);
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .subtitle {
+            color: var(--secondary-blue);
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .emergency-section {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .emergency-text {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: var(--text-gray);
+            margin-bottom: 10px;
+        }
+
+        .emergency-number {
+            color: var(--accent-red);
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin: 40px 0;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .button-link {
+            background-color: var(--primary-blue);
+            color: white;
+            text-decoration: none;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            transition: background-color 0.3s;
+            font-weight: bold;
+        }
+
+        .button-link:hover {
+            background-color: var(--secondary-blue);
+        }
+
+        .button-text-large {
+            font-size: 1.8em;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .button-text-small {
+            font-size: 1em;
+        }
+
+        .footer {
+            margin-top: auto;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+            background-color: rgba(26, 75, 132, 0.8);
+            color: white;
+            font-weight: bold;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="title">United Relief Campaign</h1>
+        <h2 class="subtitle">Chabad Of Pacific Palisades</h2>
+    </div>
+
+    <div class="emergency-section">
+        <div class="emergency-text">For emergencies contact 911. For non-emergency assistance call:</div>
+        <div class="emergency-number">424-245-0770</div>
+    </div>
+
+    <div class="button-container">
+        <a href="#" class="button-link">
+            <span class="button-text-large">Do you need help?</span>
+            <span class="button-text-small">click here</span>
+        </a>
+        <a href="#" class="button-link">
+            <span class="button-text-large">Can you help?</span>
+            <span class="button-text-small">click here</span>
+        </a>
+        <a href="#" class="button-link">
+            <span class="button-text-large">Can you donate?</span>
+            <span class="button-text-small">click here</span>
+        </a>
+    </div>
+
+    <footer class="footer">
+        UNITED DISASTER RELIEF EFFORTS HEADED BY CHABAD OF PACIFIC PALISADES<br>
+        17315 W. SUNSET BLVD<br>
+        WEBSITE: <a href="https://chabadpalisades.com">CHABADPALISADES.COM</a><br>
+        TEL: 310-454-7783
+    </footer>
+</body>
+</html>
